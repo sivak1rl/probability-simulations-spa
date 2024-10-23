@@ -1,0 +1,152 @@
+/* custom.css */
+:root {
+  --primary-color: #fff;
+  --secondary-color: #ffd700;
+  /* Gold */
+  --accent-color: #555;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.navbar {
+  background-color: var(--primary-color) !important;
+}
+
+.navbar-brand {
+  color: var(--secondary-color) !important;
+}
+
+.card-title {
+  color: var(--secondary-color);
+}
+
+.btn-primary {
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #555;
+  transform: translateY(-2px);
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Overall Background */
+body {
+  background-color: #1e1e1e;
+  /* Dark background */
+  background-image: url('/images/rpg-background.jpg');
+  /* Optional: Add an RPG-themed background image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #f5f5f5;
+  /* Light text for contrast */
+  font-family: 'Cinzel', serif;
+  /* Fantasy-inspired font */
+}
+
+/* Navbar Customization */
+.navbar {
+  background-color: #2c2c2c !important;
+  border-bottom: 2px solid #444;
+}
+
+.navbar-brand {
+  font-family: 'Cinzel Decorative', cursive;
+  font-size: 1.5rem;
+  color: #ffd700 !important;
+  /* Gold color */
+}
+
+/* Card Customization */
+.card {
+  background-color: rgba(44, 44, 44, 0.9);
+  border: 1px solid #555;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card-title {
+  font-family: 'Cinzel Decorative', cursive;
+  color: #ffd700;
+  text-shadow: 1px 1px 2px #000;
+}
+
+.card-text {
+  color: #fff;
+}
+
+/* Form Labels */
+.form-label {
+  color: #ffd700;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #444;
+  border: none;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #555;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  background-color: #2c2c2c;
+  color: #ccc;
+  font-size: 0.9rem;
+  border-top: 1px solid #444;
+}
+
+/* Tooltip Customization */
+.tooltip-inner {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #555;
+}
+
+.arrow::before {
+  border-top-color: #333 !important;
+}
+
+/* Alert Messages */
+.alert-success {
+  background-color: rgba(0, 128, 0, 0.7);
+  border-color: #006400;
+  color: #f0fff0;
+}
+
+.alert-danger {
+  background-color: rgba(139, 0, 0, 0.7);
+  border-color: #8b0000;
+  color: #ffe4e1;
+}
+
+/* Animated Background */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  animation: fadeIn 2s ease-in-out;
+}
